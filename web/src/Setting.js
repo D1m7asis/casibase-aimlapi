@@ -708,6 +708,10 @@ export function getOtherProviderInfo() {
         logo: `${StaticBaseUrl}/img/social_openrouter.png`,
         url: "https://openrouter.ai/",
       },
+      "AI/ML API": {
+        logo: `${StaticBaseUrl}/img/social_aimlapi.png`,
+        url: "https://aimlapi.com/",
+      },
       "Baidu Cloud": {
         logo: `${StaticBaseUrl}/img/social_baidu_cloud.png`,
         url: "https://cloud.baidu.com/",
@@ -1105,6 +1109,7 @@ export function getProviderTypeOptions(category) {
         {id: "Claude", name: "Claude"},
         {id: "Grok", name: "Grok"},
         {id: "OpenRouter", name: "OpenRouter"},
+        {id: "AI/ML API", name: "AI/ML API"},
         {id: "Baidu Cloud", name: "Baidu Cloud"},
         {id: "iFlytek", name: "iFlytek"},
         {id: "ChatGLM", name: "ChatGLM"},
@@ -1383,6 +1388,21 @@ export function getModelSubTypeOptions(type) {
       {id: "claude-instant-v1", name: "claude-instant-v1"},
       {id: "llama-2-13b-chat", name: "llama-2-13b-chat"},
       {id: "llama-2-70b-chat", name: "llama-2-70b-chat"},
+    ];
+  } else if (type === "AI/ML API") {
+    return [
+      {id: "openai/gpt-4o", name: "openai/gpt-4o"},
+      {id: "openai/gpt-4o-mini", name: "openai/gpt-4o-mini"},
+      {id: "gpt-4o-2024-05-13", name: "gpt-4o-2024-05-13"},
+      {id: "gpt-3.5-turbo", name: "gpt-3.5-turbo"},
+      {id: "claude-3-5-sonnet-20240620", name: "claude-3-5-sonnet-20240620"},
+      {id: "claude-3-haiku-20240307", name: "claude-3-haiku-20240307"},
+      {id: "google/gemini-2.5-pro", name: "google/gemini-2.5-pro"},
+      {id: "google/gemma-3-4b-it", name: "google/gemma-3-4b-it"},
+      {id: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", name: "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo"},
+      {id: "meta-llama/Llama-3-8b-chat-hf", name: "meta-llama/Llama-3-8b-chat-hf"},
+      {id: "deepseek-chat", name: "deepseek-chat"},
+      {id: "deepseek-reasoner", name: "deepseek-reasoner"},
     ];
   } else if (type === "Baidu Cloud") {
     return [
